@@ -1,0 +1,12 @@
+@EndUserText.label: 'Politicas de Acceso Personalizada'
+@MappingRole: true
+define role ZAC_CUSTOM_ASPECT_598 {
+    grant 
+        select
+            on
+                zcds_auditing_aspect_598
+                    where
+                        ( InvAmount ) = aspect ZAC_AUDITING_ASPECT_598
+                        and InvAmount > 100;
+                        
+}

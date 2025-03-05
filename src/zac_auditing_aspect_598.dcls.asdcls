@@ -1,0 +1,9 @@
+define accesspolicy ZAC_AUDITING_ASPECT_598 {
+    @EndUserText.label: 'Politicas de Acceso Personalizada'
+    define aspect ZAC_AUDITING_ASPECT_598 as
+        select from zcds_auditing_aspect_598 with user element CreatedBy
+            {
+              InvAmount
+            }
+            
+}
