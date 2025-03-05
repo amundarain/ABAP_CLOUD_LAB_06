@@ -1,0 +1,11 @@
+@EndUserText.label: 'aspect user'
+@MappingRole: true
+define role ZAC_COM_INV_2_598 {
+    grant
+        select
+            on
+                zcds_com_inv_2_598
+                    where
+                        CreatedBy = aspect user;
+                        
+}
